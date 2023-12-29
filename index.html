@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+      <div class="car">
+        <div class="body"></div>
+        <div class="top"></div>
+        <div class="wheel1"></div>
+        <div class="wheel2"></div>
+        <div class="background"></div>
+        <div class="window1"></div>
+        <div class="window2"></div>
+      </div>
+      <style>
+        .car {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  left: -250px;
+  animation: drive 3s ease-in forwards;
+}
+
+@keyframes drive {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: calc(100% - 285px);
+  }
+}
+.car .body {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(180, 127, 127);
+  position: absolute;
+  bottom: 0;
+}
+
+.car .top{
+  width: 160px;
+  height: 20px;
+  background-color: rgb(180, 127, 127);
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+}
+.car .wheel1{
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+}
+.car .wheel2 {
+  width: 35px;
+  height:35px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+}
+
+.car .wheel1 {
+  right: 15px;
+}
+
+.car .wheel2 {
+  right: 150px;
+}
+body {
+                background: url(https://avatars.dzeninfra.ru/get-zen_doc/3828082/pub_608457a07b54072a76ce6077_6084581e7b54072a76d00565/scale_1200) no-repeat;
+                background-size: 100%; 
+                height: auto;
+               }
+               .car .window1{
+  width: 55px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  bottom: 57px;
+right: 53px;
+  
+}
+.car .window2{
+  width: 55px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  bottom: 57px;
+  left: 18px;
+  
+}
+
+      </style>
+    </html>
